@@ -77,6 +77,10 @@ h1{
     background-color: var(--hoverColor);
 }
 
+.btn:disabled{
+    background-color: var(--disabledColor);
+}
+
 .th{
     padding: 20px 20px;
     text-align: center;

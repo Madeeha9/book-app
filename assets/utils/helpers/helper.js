@@ -59,3 +59,18 @@ function getTableTag() {
     return table;
 }
 
+function checkForEmptyInputs() {
+    
+    for(let input of inputTagArr) {
+        const { id } = input;
+        const inputData = document.querySelector(`#${"input"+id}`);
+        const value = inputData.value;
+
+        if(value == "") {
+            alert("Please fill complete details!");
+            return;
+        }
+    }
+    
+    saveInputDataInTable();
+}

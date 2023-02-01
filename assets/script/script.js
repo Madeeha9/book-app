@@ -36,7 +36,7 @@ function saveInputDataInTable() {
 
 const saveBtnRef = document.querySelector("#saveBtn");
 
-saveBtnRef.addEventListener('click', saveInputDataInTable);
+saveBtnRef.addEventListener('click', checkForEmptyInputs);
 
 function clearInputField() {
     for(let input of inputTagArr) {
